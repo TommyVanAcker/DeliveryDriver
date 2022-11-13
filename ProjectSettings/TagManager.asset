@@ -44,6 +44,9 @@ TagManager:
   - name: Roads
     uniqueID: 281337655
     locked: 0
+  - name: SpeedBumps
+    uniqueID: 2510669257
+    locked: 0
   - name: Cars
     uniqueID: 3178314149
     locked: 0
