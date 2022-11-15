@@ -161,14 +161,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9d1664fb3de674aa62c58f4ed0fde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasPackage: 0
   colorEmpty:
     serializedVersion: 2
     rgba: 4280680439
   colorFull:
     serializedVersion: 2
     rgba: 4293360546
-  pts: 0
-  ptsPackageDelivered: 10
-  penaltyPtsPackageLost: 5
-  penaltyPtsCrashed: 3
+  ptsPackageDelivered: 55
+  penaltyPtsPackageLost: 20
+  penaltyPtsCrashed: 8

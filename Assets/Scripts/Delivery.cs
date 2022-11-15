@@ -1,16 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Delivery : MonoBehaviour
 {
-    [SerializeField] bool hasPackage = false;
-    [SerializeField] Color32 colorEmpty;
-    [SerializeField] Color32 colorFull;
-    [SerializeField] int pts;
-    [SerializeField] int ptsPackageDelivered = 10;
-    [SerializeField] int penaltyPtsPackageLost = 5;
-    [SerializeField] int penaltyPtsCrashed = 3;
+    int pts;
+    bool hasPackage = false;
+    
+    [Header("Car Status: ")]
+    [Tooltip("Color when car has no package")][SerializeField] Color32 colorEmpty;
+    [Tooltip("Color when car has a package")][SerializeField] Color32 colorFull;
+    [Header("Reward system: ")]
+    [SerializeField] [Range(0,100)] int ptsPackageDelivered = 10;
+    [Tooltip("crashed with package")][Range(1,50)][SerializeField] int penaltyPtsPackageLost = 5;
+    [Tooltip("crashed without package")][Range(1,30)][SerializeField] int penaltyPtsCrashed = 3;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Package" && !hasPackage)
