@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3701941758894370705}
   m_Layer: 0
   m_Name: McDrive (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1116653147
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: d9587da59ef7eff45bc19c5510980c55, type: 3}
   m_Color: {r: 0.9693119, g: 1, b: 0.14528298, a: 1}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  steerSpeed: 2000
+  steerSpeed: 1000
 --- !u!114 &3701941758894370705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,3 +161,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9d1664fb3de674aa62c58f4ed0fde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasPackage: 0
+  colorEmpty:
+    serializedVersion: 2
+    rgba: 4280680439
+  colorFull:
+    serializedVersion: 2
+    rgba: 4293360546
+  pts: 0
+  ptsPackageDelivered: 10
+  penaltyPtsPackageLost: 5
+  penaltyPtsCrashed: 3

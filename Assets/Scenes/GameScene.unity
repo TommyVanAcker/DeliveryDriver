@@ -2851,14 +2851,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3701941758894370705, guid: 1aba4ffff0f51c2459236b3ab8c81e83, type: 3}
-      propertyPath: colorFull.rgba
-      value: 4293360546
-      objectReference: {fileID: 0}
-    - target: {fileID: 3701941758894370705, guid: 1aba4ffff0f51c2459236b3ab8c81e83, type: 3}
-      propertyPath: colorEmpty.rgba
-      value: 4280680439
-      objectReference: {fileID: 0}
     - target: {fileID: 3701941758894370709, guid: 1aba4ffff0f51c2459236b3ab8c81e83, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2906,14 +2898,6 @@ PrefabInstance:
     - target: {fileID: 3701941758894370710, guid: 1aba4ffff0f51c2459236b3ab8c81e83, type: 3}
       propertyPath: m_Name
       value: McDrive (Player)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3701941758894370710, guid: 1aba4ffff0f51c2459236b3ab8c81e83, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3701941758894370711, guid: 1aba4ffff0f51c2459236b3ab8c81e83, type: 3}
-      propertyPath: steerSpeed
-      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
