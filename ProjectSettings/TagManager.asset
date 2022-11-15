@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Package
+  - Customer
   layers:
   - Default
   - TransparentFX
@@ -46,6 +48,9 @@ TagManager:
     locked: 0
   - name: SpeedBumps
     uniqueID: 2510669257
+    locked: 0
+  - name: Delivery
+    uniqueID: 1276291385
     locked: 0
   - name: Cars
     uniqueID: 3178314149
