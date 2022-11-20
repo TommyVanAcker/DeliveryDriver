@@ -11,6 +11,7 @@ public class Delivery : MonoBehaviour
     [Header("Car Status: ")]
     [Tooltip("Color when car has no package")][SerializeField] Color32 colorEmpty;
     [Tooltip("Color when car has a package")][SerializeField] Color32 colorFull;
+     
     [Header("Reward system: ")]
     [SerializeField] [Range(0,100)] int ptsPackageDelivered = 10;
     [Tooltip("crashed with package")][Range(1,50)][SerializeField] int penaltyPtsPackageLost = 5;
@@ -22,8 +23,9 @@ public class Delivery : MonoBehaviour
             //Debug.Log("picked up package");
             Destroy(collision.gameObject);
             SetStatusCar(true, colorFull);
- 
-        } else if (collision.tag == "Customer" && hasPackage)
+
+        }
+        else if (collision.tag == "Customer" && hasPackage)
         {
             //Debug.Log("Package delivered");
             SetStatusCar(false, colorEmpty);
@@ -31,6 +33,7 @@ public class Delivery : MonoBehaviour
 
         }
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
